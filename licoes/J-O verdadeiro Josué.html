@@ -1,0 +1,455 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Conteúdo Gerado</title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <style>
+                        body { font-family: Baskerville, serif; font-size: 20px; line-height: 1.6; margin: 10px; background: url('https://st5.depositphotos.com/1032577/66413/i/450/depositphotos_664139922-stock-photo-bright-paper-white-paper-texture.jpg') repeat; }
+                        h1 { text-align: left; color: white; font-size: 32px; font-weight: bold; height: 150px; padding: 20px; background: url("https://picsum.photos/1200/300") no-repeat center center; background-size: cover; border-radius: 8px; margin: 10px 0; text-shadow: 2px 2px 6px rgba(0,0,0,0.7); }
+                        h2 { color: #8B0000; font-size: 30px; }
+                        h2 + p:first-letter{
+  float: left;
+  font-size: 3.6em;
+  line-height: 0.9;
+  padding-right: 10px;
+  padding-left: 2px;
+  font-weight: bold;
+  color: #8B0000;
+  font-family: "Baskerville";
+}
+                        .dica-destacada { background: url('https://img.freepik.com/fotos-premium/fundo-quadrado-de-papel-pastel-marrom-claro_696657-18774.jpg') no-repeat center center; background-size: cover; padding: 25px; border-radius: 8px; font-weight: bold; font-family: monospace; font-size: 20px; color: #f2f0f0; margin: 15px 0; }
+                        .pergunta-direta { margin: 20px 0; padding: 15px; background-color: #e8f0fe; border-left: 6px solid #003366; border-radius: 6px; font-weight: bold; color: #003366; }
+                        .papel-resposta { display: block; width: 90%; height: 150px; padding: 10px 15px; font-family: 'Baskerville'; font-size: 20px; line-height: 40px; border: none; outline: none; background: repeating-linear-gradient(to bottom, #fffdf5, #fffdf5 39px, #e0dccc 40px); box-shadow: 0 0 10px rgba(0,0,0,0.1); resize: none; margin: 15px auto; border-radius: 8px; }
+                        img { max-width: 100%; height: auto; border-radius: 6px; }
+                        .video-container { position: relative; padding-bottom: 56.25%; height: 0; }
+                        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 6px; }
+
+                        /* quiz style (mesmo visual) */
+                        .quiz-card { margin: 18px 0; padding: 14px; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 6px rgba(0,0,0,0.06); border: 1px solid #e6e2de; }
+                        .quiz-header { font-weight: bold; margin-bottom: 8px; color: #003366; font-size: 18px; }
+                        .quiz-enunciado { font-size: 20px; margin-bottom: 8px; color: #222; }
+                        .quiz-image { max-width: 100%; height: auto; margin: 10px 0; border-radius: 6px; border: 1px solid #eee; }
+                        .option-label { display: block; margin: 8px 0; padding: 8px; border-radius: 6px; border: 1px solid transparent; cursor: pointer; }
+                        .option-input { margin-right: 10px; }
+                        .option-label.correct { background-color: #dff0d8; border-color: #c3e6cb; }
+                        .option-label.incorrect { background-color: #f8d7da; border-color: #f5c6cb; }
+                        .quiz-actions { margin-top: 12px; display: flex; gap: 10px; align-items: center; }
+                        .quiz-result { font-weight: bold; margin-left: 8px; }
+                    </style>
+                </head>
+                <body>
+                    
+            <h2></h2>
+            <div id="visualizacao"><div>
+                
+                
+                
+                    <meta charset="UTF-8">
+                    <title>Conteúdo Gerado</title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <style>
+                        body { font-family: Baskerville, serif; font-size: 20px; line-height: 1.6; margin: 10px; background: url('https://st5.depositphotos.com/1032577/66413/i/450/depositphotos_664139922-stock-photo-bright-paper-white-paper-texture.jpg') repeat; }
+                        h1 { text-align: left; color: white; font-size: 32px; font-weight: bold; height: 150px; padding: 20px; background: url("https://picsum.photos/1200/300") no-repeat center center; background-size: cover; border-radius: 8px; margin: 10px 0; text-shadow: 2px 2px 6px rgba(0,0,0,0.7); }
+                        h2 { color: #8B0000; font-size: 30px; }
+                        h2 + p:first-letter{
+  float: left;
+  font-size: 3.6em;
+  line-height: 0.9;
+  padding-right: 10px;
+  padding-left: 2px;
+  font-weight: bold;
+  color: #8B0000;
+  font-family: "Baskerville";
+}
+                        .dica-destacada { background: url('https://img.freepik.com/fotos-premium/fundo-quadrado-de-papel-pastel-marrom-claro_696657-18774.jpg') no-repeat center center; background-size: cover; padding: 25px; border-radius: 8px; font-weight: bold; font-family: monospace; font-size: 20px; color: #f2f0f0; margin: 15px 0; }
+                        .pergunta-direta { margin: 20px 0; padding: 15px; background-color: #e8f0fe; border-left: 6px solid #003366; border-radius: 6px; font-weight: bold; color: #003366; }
+                        .papel-resposta { display: block; width: 90%; height: 150px; padding: 10px 15px; font-family: 'Baskerville'; font-size: 20px; line-height: 40px; border: none; outline: none; background: repeating-linear-gradient(to bottom, #fffdf5, #fffdf5 39px, #e0dccc 40px); box-shadow: 0 0 10px rgba(0,0,0,0.1); resize: none; margin: 15px auto; border-radius: 8px; }
+                        img { max-width: 100%; height: auto; border-radius: 6px; }
+                        .video-container { position: relative; padding-bottom: 56.25%; height: 0; }
+                        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 6px; }
+
+                        /* quiz style (mesmo visual) */
+                        .quiz-card { margin: 18px 0; padding: 14px; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 6px rgba(0,0,0,0.06); border: 1px solid #e6e2de; }
+                        .quiz-header { font-weight: bold; margin-bottom: 8px; color: #003366; font-size: 18px; }
+                        .quiz-enunciado { font-size: 20px; margin-bottom: 8px; color: #222; }
+                        .quiz-image { max-width: 100%; height: auto; margin: 10px 0; border-radius: 6px; border: 1px solid #eee; }
+                        .option-label { display: block; margin: 8px 0; padding: 8px; border-radius: 6px; border: 1px solid transparent; cursor: pointer; }
+                        .option-input { margin-right: 10px; }
+                        .option-label.correct { background-color: #dff0d8; border-color: #c3e6cb; }
+                        .option-label.incorrect { background-color: #f8d7da; border-color: #f5c6cb; }
+                        .quiz-actions { margin-top: 12px; display: flex; gap: 10px; align-items: center; }
+                        .quiz-result { font-weight: bold; margin-left: 8px; }
+                    </style>
+                
+                
+                    
+            <h2></h2>
+            <div id="visualizacao"><h1>O verdadeiro Josué</h1><div class="dica-destacada">“Estas coisas aconteceram com eles para servir de exemplo e foram escritas como advertência a nós, para quem o fim dos tempos tem chegado” ( 1Co 10:11 ).</div><h2>Sábado, 29 de novembro</h2><p>O estudo de Sábado nos convida a uma reflexão teológica profunda, com o tema O Verdadeiro Josué.
+
+Resumo do Estudo de Sábado: O Verdadeiro Josué
+O livro de Josué nos mostra que o personagem principal e os eventos narrados (como a Terra de Canaã e o serviço do santuário) apontam para uma realidade muito maior no futuro. A Bíblia chama isso de tipologia, onde algo no Antigo Testamento (o tipo) prenuncia algo maior no Novo Testamento (o antítipo).&nbsp;</p><p>&nbsp; &nbsp; &nbsp;Por exemplo, o santuário terrestre apontava para Cristo como nosso Sumo Sacerdote em um "tabernáculo, não feito por mãos humanas" (Hebreus 9:11). Nesta semana, vamos explorar os princípios bíblicos que nos permitem ver como a vida de Josué, um líder que guiou Israel à sua herança, prenuncia o ministério do Messias (Jesus). Estudaremos como esse simbolismo se cumpre na Igreja de hoje e terá sua consumação gloriosa no fim da história humana, quando alcançaremos nossa herança eterna.</p><h1>Tipologia</h1><h2>Domingo, 30 de novembro</h2><p>A Tipologia é uma forma essencial de interpretar a Bíblia, onde pessoas, eventos ou instituições do Antigo Testamento (o tipo) prefiguram Jesus Cristo ou realidades do evangelho (o antítipo) no Novo Testamento. O antítipo é o cumprimento mais completo do propósito que o tipo apenas esboçou.</p><div class="inserido"><div class="pergunta-direta">1. Estude as seguintes passagens que se referem a tipos e procure formular o que é tipologia bíblica: Rm 5:14; 1Co 10:1-13; Hb 8:5; 9:23</div><textarea class="papel-resposta" data-chave="resposta_MS4gRXN0dWRlIGFzIHNlZ3VpbnRlcyBwYXNzYWdlbnMgcXVlIHNlIHJlZmVyZW0gYSB0aXBvcyBlIHByb2N1cmUgZm9ybXVsYXIgbyBxdWUg6SB0aXBvbG9naWEgYu1ibGljYTogUm0gNToxNDsgMUNvIDEwOjEtMTM7IEhiIDg6NTsgOToyM18xNzYyNDU3NzM5MjEy"></textarea></div><p>É crucial entender que essa conexão não é aleatória: um tipo do Antigo Testamento é validado em escritos proféticos antes de ser cumprido no Novo Testamento. Em outras palavras, o próprio Antigo Testamento contém as chaves para identificar esses tipos. Os escritores do Novo Testamento, inspirados pelo Espírito Santo, usaram esses tipos para revelar a "presente verdade" sobre Jesus e Seu ministério, mostrando que o plano de salvação de Deus é consistente desde o início.</p><div class="inserido"><div class="pergunta-direta">2. Veja como Davi aparece no Antigo Testamento e, então, como ele é prefigurado no Novo. Que lições podemos aprender sobre como a tipologia funciona a partir deste exemplo?&nbsp;</div><div class="pergunta-direta">&nbsp;a) Davi (Sl 22:1, 14-18)</div><textarea class="papel-resposta" data-chave="resposta_Mi4gVmVqYSBjb21vIERhdmkgYXBhcmVjZSBubyBBbnRpZ28gVGVzdGFtZW50byBlLCBlbnTjbywgY29tbyBlbGUg6SBwcmVmaWd1cmFkbyBubyBOb3ZvLiBRdWUgbGnn9WVzIHBvZGVtb3MgYXByZW5kZXIgc29icmUgY29tbyBhIHRpcG9sb2dpYSBmdW5jaW9uYSBhIHBhcnRpciBkZXN0ZSBleGVtcGxvPwoKYSkgRGF2aSAoU2wgMjI6MSwgMTQtMTgpXzE3NjI0NTc3ODk4NTk="></textarea></div><div class="inserido"><div class="pergunta-direta">b) O novo Davi (Jr 23:5; Is 9:5-7; 11:1-5)</div><textarea class="papel-resposta" data-chave="resposta_YikgTyBub3ZvIERhdmkgKEpyIDIzOjU7IElzIDk6NS03OyAxMToxLTUpXzE3NjI0NTc4MTYwNTE="></textarea></div><div class="inserido"><div class="pergunta-direta">c) O Davi antitípico (Jo 19:24)</div><textarea class="papel-resposta" data-chave="resposta_YykgTyBEYXZpIGFudGl07XBpY28gKEpvIDE5OjI0KV8xNzYyNDU3ODI4NjEx"></textarea></div><h1>Tipo e antitipo</h1><h2>Segunda-feira, 1 de dezembro</h2><p>A chave para a interpretação bíblica é reconhecer que a Bíblia se interpreta a si mesma, oferecendo diretrizes claras sobre a Tipologia. Os intérpretes não podem escolher arbitrariamente o que é um tipo ou como ele se cumpre.</p><div class="inserido"><div class="pergunta-direta">3. Veja os seguintes tipos de AT: Israel, o êxodo e os santuários. Como cada um é cumprido nas três fases antitípicas: a cristológica, a eclesiológica e a escatológica?&nbsp;</div><div class="pergunta-direta">&nbsp;1. Israel&nbsp;</div><div class="pergunta-direta">&nbsp;a) Fase cristológica (Mt 2:15)</div><textarea class="papel-resposta" data-chave="resposta_My4gVmVqYSBvcyBzZWd1aW50ZXMgdGlwb3MgZGUgQVQ6IElzcmFlbCwgbyDqeG9kbyBlIG9zIHNhbnR14XJpb3MuIENvbW8gY2FkYSB1bSDpIGN1bXByaWRvIG5hcyB0cupzIGZhc2VzIGFudGl07XBpY2FzOiBhIGNyaXN0b2zzZ2ljYSwgYSBlY2xlc2lvbPNnaWNhIGUgYSBlc2NhdG9s82dpY2E/CgoxLiBJc3JhZWwKCmEpIEZhc2UgY3Jpc3RvbPNnaWNhIChNdCAyOjE1KV8xNzYyNDU3OTYzMzcx"></textarea></div><div class="inserido"><div class="pergunta-direta">b) Fase eclesiológica (Gl 6:16)</div><textarea class="papel-resposta" data-chave="resposta_YikgRmFzZSBlY2xlc2lvbPNnaWNhIChHbCA2OjE2KV8xNzYyNDU3OTg5OTM5"></textarea></div><div class="inserido"><div class="pergunta-direta">c) Fase escatológica (Ap 7:4-8, 14)</div><textarea class="papel-resposta" data-chave="resposta_YykgRmFzZSBlc2NhdG9s82dpY2EgKEFwIDc6NC04LCAxNClfMTc2MjQ1ODAwMTczMQ=="></textarea></div><div class="inserido"><div class="pergunta-direta">2. O êxodo&nbsp;</div><div class="pergunta-direta">&nbsp;a) Fase cristológica (Mt 2:19-21)</div><textarea class="papel-resposta" data-chave="resposta_Mi4gTyDqeG9kbwoKYSkgRmFzZSBjcmlzdG9s82dpY2EgKE10IDI6MTktMjEpXzE3NjI0NTgwMTczMjQ="></textarea></div><div class="inserido"><div class="pergunta-direta">b) Fase eclesiológica (2Co 6:17)</div><textarea class="papel-resposta" data-chave="resposta_YikgRmFzZSBlY2xlc2lvbPNnaWNhICgyQ28gNjoxNylfMTc2MjQ1ODAzNTg0NQ=="></textarea></div><div class="inserido"><div class="pergunta-direta">c) Fase escatológica (Ap 18:4)</div><textarea class="papel-resposta" data-chave="resposta_YykgRmFzZSBlc2NhdG9s82dpY2EgKEFwIDE4OjQpXzE3NjI0NTgwNDk1NTU="></textarea></div><div class="inserido"><div class="pergunta-direta">3. O conforto&nbsp;</div><div class="pergunta-direta">&nbsp;a. Fase cristológica (Jo 1:14; 2:21; Mt 26:61)</div><textarea class="papel-resposta" data-chave="resposta_My4gTyBjb25mb3J0bwoKYS4gRmFzZSBjcmlzdG9s82dpY2EgKEpvIDE6MTQ7IDI6MjE7IE10IDI2OjYxKV8xNzYyNDU4MDcwNDEx"></textarea></div><div class="inserido"><div class="pergunta-direta">b. Fase eclesiológica (1Co 3:16, 17; 2Co 6:16)</div><textarea class="papel-resposta" data-chave="resposta_Yi4gRmFzZSBlY2xlc2lvbPNnaWNhICgxQ28gMzoxNiwgMTc7IDJDbyA2OjE2KV8xNzYyNDU4MDk3NjM1"></textarea></div><div class="inserido"><div class="pergunta-direta">c. Fase escatológica (Ap 3:12; 11:19; 21:3, 22)</div><textarea class="papel-resposta" data-chave="resposta_Yy4gRmFzZSBlc2NhdG9s82dpY2EgKEFwIDM6MTI7IDExOjE5OyAyMTozLCAyMilfMTc2MjQ1ODEwOTI2Nw=="></textarea></div><p>&nbsp; &nbsp; O Novo Testamento mostra que o cumprimento (o antítipo) de um tipo do Antigo Testamento ocorre em três fases distintas:&nbsp;</p><p>&nbsp;Cristológica: Na vida e ministério de Jesus Cristo.&nbsp;</p><p>&nbsp;Eclesiológica: Na experiência e missão da Igreja.&nbsp;</p><p>&nbsp;Escatológica: Nos eventos do fim dos tempos e na consumação da história.&nbsp;</p><p>&nbsp; &nbsp; &nbsp;A Tipologia é valiosa porque reforça que a Escritura possui um único e divino Autor e que suas diversas partes se harmonizam. Todas as doutrinas são coerentes, e a interpretação de uma passagem deve estar em harmonia com o ensino total da Bíblia sobre o assunto. Essa abordagem nos ajuda a entender as verdades centrais da Palavra de Deus sobre Jesus, a salvação e nossa esperança final.</p><h1>Josué, o tipo</h1><h2>Terça-feira, 2 de dezembro</h2><p>A vida de Josué é apresentada no Antigo Testamento como um "novo Moisés", pois ele repetiu os passos mais significativos do Êxodo:&nbsp;</p><p>&nbsp;Ambos foram comissionados por Deus em encontros pessoais.&nbsp;</p><p>&nbsp;Ambos lideraram travessias milagrosas (Mar Vermelho e Rio Jordão).&nbsp;</p><p>&nbsp;Com ambos, a Páscoa e a circuncisão foram lembradas.&nbsp;</p><p>&nbsp;O maná começou com Moisés e parou com Josué.&nbsp;</p><p>&nbsp;Ambos cumpriram a vontade de Deus em relação à vitória, à terra e à renovação da aliança.</p><div class="inserido"><div class="pergunta-direta">4. À luz da tipologia bíblica, qual é o significado do paralelismo múltiplo entre a vida de Moisés e Josué? Compare Êxodo 3:1, 2 com Josué 1:1-3; Números 13:1, 2 com Js 2:1; Êxodo 3:5 com Josué 5:15.</div><textarea class="papel-resposta" data-chave="resposta_NC4gwCBsdXogZGEgdGlwb2xvZ2lhIGLtYmxpY2EsIHF1YWwg6SBvIHNpZ25pZmljYWRvIGRvIHBhcmFsZWxpc21vIG36bHRpcGxvIGVudHJlIGEgdmlkYSBkZSBNb2lz6XMgZSBKb3N16T8gQ29tcGFyZSDKeG9kbyAzOjEsIDIgY29tIEpvc3XpIDE6MS0zOyBO+m1lcm9zIDEzOjEsIDIgY29tIEpzIDI6MTsgynhvZG8gMzo1IGNvbSBKb3N16SA1OjE1Ll8xNzYyNDU4Mjk0NTcx"></textarea></div><p>&nbsp; &nbsp;Tudo isso faz de Josué um tipo, um cumprimento parcial da profecia de Moisés sobre o profeta que viria (Deuteronômio 18:15, 18). Contudo, em seu sentido pleno, essa profecia só poderia ser cumprida pelo Messias, Jesus Cristo. Somente Jesus conhecia o Pai intimamente, revelou Deus com sinceridade e tinha as palavras de Deus em Sua boca. Assim, tanto a vida de Moisés quanto a de Josué se tornam poderosos tipos do Messias vindouro, apontando para o verdadeiro líder que nos guia à nossa herança eterna.</p><div class="inserido"><div class="pergunta-direta">5. Estude Deuteronômio 18:15-19; 34:10-12; João 1:21; Atos 3:22-26; 7:37. Quem cumpriu a profecia de Moisés sobre um profeta como ele? Como Josué se encaixa no quadro?</div><textarea class="papel-resposta" data-chave="resposta_NS4gRXN0dWRlIERldXRlcm9u9G1pbyAxODoxNS0xOTsgMzQ6MTAtMTI7IEpv428gMToyMTsgQXRvcyAzOjIyLTI2OyA3OjM3LiBRdWVtIGN1bXByaXUgYSBwcm9mZWNpYSBkZSBNb2lz6XMgc29icmUgdW0gcHJvZmV0YSBjb21vIGVsZT8gQ29tbyBKb3N16SBzZSBlbmNhaXhhIG5vIHF1YWRybz9fMTc2MjQ1ODMyNDA2Nw=="></textarea></div><h1>O verdadeiro Josué, o antítipo</h1><h2>Quarta-feira, 3 de dezembro</h2><p>A história de Josué e suas guerras históricas, que visavam estabelecer Israel na Terra Prometida para desfrutar da paz e da lei de Deus, é um tipo da obra maior de Cristo. Os profetas do Antigo Testamento já apontavam para o Messias, o novo Josué, cuja tarefa seria restaurar as "propriedades devastadas" do povo de Deus e atribuir a herança espiritual a um novo Israel.</p></div>
+        
+                    <script>
+                        /* Script embarcado para manter comportamento dos quizzes e perguntas diretas no arquivo exportado */
+                        (function(){
+                            // restaura respostas para Perguntas Diretas
+                            document.querySelectorAll('.papel-resposta').forEach(area=>{
+                                const chave = area.getAttribute('data-chave');
+                                if(chave && localStorage.getItem(chave)) area.value = localStorage.getItem(chave);
+                                area.addEventListener('input', ()=> {
+                                    if(chave) localStorage.setItem(chave, area.value);
+                                });
+                            });
+
+                            // para cada quiz-card, restaurar seleção salva e adicionar listeners
+                            document.querySelectorAll('.quiz-card').forEach(container=>{
+                                const quizId = container.getAttribute('data-quiz-id');
+                                if(!quizId) return;
+                                const key = 'quiz_answer_' + quizId;
+                                // associa listener de change e restaura se necessário
+                                const radios = container.querySelectorAll('input[type="radio"]');
+                                radios.forEach(r=>{
+                                    r.addEventListener('change', (e)=> {
+                                        localStorage.setItem(key, e.target.value);
+                                    });
+                                });
+                                const saved = localStorage.getItem(key);
+                                if(saved){
+                                    const r = container.querySelector('input[type="radio"][value="'+saved+'"]');
+                                    if(r) r.checked = true;
+                                }
+                            });
+
+                            // função global para verificar quiz (será chamada pelo botão)
+                            window.verificarQuiz = function(btn){
+                                const container = btn.closest('.quiz-card');
+                                if(!container) return;
+                                const radios = container.querySelectorAll('input[type="radio"]');
+                                const quizId = container.getAttribute('data-quiz-id');
+                                const resultBox = container.querySelector('.quiz-result');
+                                container.querySelectorAll('.option-label').forEach(l=> l.classList.remove('correct','incorrect'));
+
+                                let correctRadio = null;
+                                radios.forEach(r=>{
+                                    if(r.hasAttribute('data-correct')) correctRadio = r;
+                                });
+
+                                const selected = container.querySelector('input[type="radio"]:checked');
+                                if(!selected){
+                                    if(resultBox) resultBox.textContent = 'Escolha uma opção antes de verificar.';
+                                    return;
+                                }
+
+                                if(correctRadio){
+                                    const correctLabel = correctRadio.closest('.option-label');
+                                    if(correctLabel) correctLabel.classList.add('correct');
+                                }
+                                const selectedLabel = selected.closest('.option-label');
+                                if(selectedLabel && !selected.hasAttribute('data-correct')) selectedLabel.classList.add('incorrect');
+
+                                const key = 'quiz_answer_' + quizId;
+                                localStorage.setItem(key, selected.value);
+                                const acerto = selected.hasAttribute('data-correct') ? 1 : 0;
+                                if(resultBox) resultBox.textContent = acerto ? 'Resposta correta ✓' : 'Resposta incorreta ✗';
+                            };
+                        })();
+                    </script>
+                
+                
+            </div><div class="dica-destacada">6. Leia Hebreus 3:7–4:11. Como o Novo Testamento confirma que Josué, o novo Moisés, é ele mesmo um tipo de Jesus Cristo?</div><div>
+
+
+  <meta charset="UTF-8">
+  <title>Conteúdo Gerado</title>
+  <style>
+    body {
+      font-family: Baskerville;
+      font-size: 20px;
+      line-height: 1.6;
+      margin-left: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: #dfe7fd;
+      color: #ffffff;
+    }
+
+    h2 {
+      color: #003366;
+      font-size: 24px;
+    }
+
+    .dica-destacada {
+      background-color: yellow;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .papel {
+      display: block;
+      width: 90%;
+      height: 160px;
+      padding: 10px 15px;
+      font-family: 'Baskerville';
+      font-size: 20px;
+      line-height: 40px;
+      border: none;
+      outline: none;
+      background: repeating-linear-gradient(
+        to bottom,
+        #fffdf5,
+        #fffdf5 39px,
+        #e0dccc 40px
+      );
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      resize: none;
+      margin: 20px auto;
+    }
+  </style>
+
+
+  <h2></h2>
+
+  <div id="visualizacao">
+    <div class="inserido">
+      <textarea class="papel" placeholder="Escreva aqui..."></textarea>
+    </div>
+
+  <script>
+    document.querySelectorAll('.papel').forEach(function(papel, index) {
+      const pagina = location.pathname;
+      const chave = 'anotacao_papel_' + pagina + '_' + index;
+
+      papel.value = localStorage.getItem(chave) || "";
+
+      papel.addEventListener('input', function() {
+        localStorage.setItem(chave, papel.value);
+      });
+    });
+  </script>
+
+
+</div></div><p>Os autores do Novo Testamento viram paralelos claros:&nbsp;</p><p>&nbsp;Assim como Josué liderou após 40 anos no deserto, Jesus começou Seu ministério após 40 dias no deserto.&nbsp;</p><p>&nbsp;O batismo de Jesus no Jordão, Sua "travessia do Jordão", O apresentou como o Guerreiro Divino.&nbsp;</p><p>&nbsp; &nbsp; &nbsp;A vida, morte e ressurreição de Jesus travaram as guerras de Deus contra as forças do mal, resultando na expulsão de Satanás e na conquista sobre nossos inimigos espirituais. O ministério de Jesus garantiu o descanso espiritual para Seu povo e reservou a herança eterna para os redimidos, cumprindo plenamente o que o ministério de Josué apenas prefigurou.</p><h1>Josué e nós</h1><h2>Quinta-feira, 4 de dezembro</h2><p>A Tipologia de Josué não se limita apenas a Jesus; ela tem um cumprimento eclesiológico na igreja, que está engajada em uma guerra espiritual, mas desfruta do descanso da graça de Deus e das vitórias da sua herança espiritual. O cumprimento final (escatológico) ocorrerá na Segunda Vinda de Cristo.</p><h2>7. Josué, como um tipo, aponta além do ministério de Jesus Cristo para um cumprimento na vida da igreja, o corpo de Cristo. Em que sentido as guerras travadas por Israel sob Josué prenunciam as lutas espirituais da igreja? Em que aspecto elas são diferentes? 1Tm 1:18; 2Tm 4:7; Ef 6:10-12; 2Co 10:3-5; At 20:32</h2><div>
+
+
+  <meta charset="UTF-8">
+  <title>Conteúdo Gerado</title>
+  <style>
+    body {
+      font-family: Baskerville;
+      font-size: 20px;
+      line-height: 1.6;
+      margin-left: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: #dfe7fd;
+      color: #ffffff;
+    }
+
+    h2 {
+      color: #003366;
+      font-size: 24px;
+    }
+
+    .dica-destacada {
+      background-color: yellow;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .papel {
+      display: block;
+      width: 90%;
+      height: 160px;
+      padding: 10px 15px;
+      font-family: 'Baskerville';
+      font-size: 20px;
+      line-height: 40px;
+      border: none;
+      outline: none;
+      background: repeating-linear-gradient(
+        to bottom,
+        #fffdf5,
+        #fffdf5 39px,
+        #e0dccc 40px
+      );
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      resize: none;
+      margin: 20px auto;
+    }
+  </style>
+
+
+  <h2></h2>
+
+  <div id="visualizacao">
+    <div class="inserido">
+      <textarea class="papel" placeholder="Escreva aqui..."></textarea>
+    </div>
+
+  <script>
+    document.querySelectorAll('.papel').forEach(function(papel, index) {
+      const pagina = location.pathname;
+      const chave = 'anotacao_papel_' + pagina + '_' + index;
+
+      papel.value = localStorage.getItem(chave) || "";
+
+      papel.addEventListener('input', function() {
+        localStorage.setItem(chave, papel.value);
+      });
+    });
+  </script>
+
+
+</div></div><p>&nbsp; &nbsp; Embora o Messias já tenha vindo e Seu ministério não precise mais de figuras (tipos), a vida de Josué nos lembra que podemos e devemos refletir o caráter de Cristo. O objetivo da nossa caminhada diária é ter a glória que Jesus deseja compartilhar conosco (João 17:22). A forma de alcançar isso é contemplando o caráter de Cristo (2 Coríntios 3:18). Ao dedicar tempo diário para estudar a Palavra, pensar na vida e nos ensinamentos de Jesus, somos transformados e refletimos cada vez mais a beleza do Seu caráter.</p><h2>8. O que os seguintes textos dizem sobre o cumprimento final da tipologia de Josué? 1Pe 1:4; Cl 3:24; Ap 20:9; 21:3</h2><div>
+
+
+  <meta charset="UTF-8">
+  <title>Conteúdo Gerado</title>
+  <style>
+    body {
+      font-family: Baskerville;
+      font-size: 20px;
+      line-height: 1.6;
+      margin-left: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: #dfe7fd;
+      color: #ffffff;
+    }
+
+    h2 {
+      color: #003366;
+      font-size: 24px;
+    }
+
+    .dica-destacada {
+      background-color: yellow;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .papel {
+      display: block;
+      width: 90%;
+      height: 160px;
+      padding: 10px 15px;
+      font-family: 'Baskerville';
+      font-size: 20px;
+      line-height: 40px;
+      border: none;
+      outline: none;
+      background: repeating-linear-gradient(
+        to bottom,
+        #fffdf5,
+        #fffdf5 39px,
+        #e0dccc 40px
+      );
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      resize: none;
+      margin: 20px auto;
+    }
+  </style>
+
+
+  <h2></h2>
+
+  <div id="visualizacao">
+    <div class="inserido">
+      <textarea class="papel" placeholder="Escreva aqui..."></textarea>
+    </div>
+
+  <script>
+    document.querySelectorAll('.papel').forEach(function(papel, index) {
+      const pagina = location.pathname;
+      const chave = 'anotacao_papel_' + pagina + '_' + index;
+
+      papel.value = localStorage.getItem(chave) || "";
+
+      papel.addEventListener('input', function() {
+        localStorage.setItem(chave, papel.value);
+      });
+    });
+  </script>
+
+
+</div></div><div class="dica-destacada">“A igreja necessita de fidelidade Calebes e Josués, que estão prontos para aceitar a vida eterna sob uma simples condição de obediência. [...] O mundo é nosso campo. Missionários são necessários em cidades e vilarejos que certamente estão mais presos à idolatria do que os pacíficos do Oriente que nunca viram a luz da verdade. O verdadeiro espírito desertou das igrejas que fazem tão alta profissão de fé [...]. Faltam-nos obreiros fervorosos. Não há ninguém que responda ao clamor que vem de todas as partes: 'Passa [...] e ajuda-nos'?” ( At 16:9 ; Ellen G. White, Testemunhos Para a Igreja [CPB, 2021], v. 4, p. 138).</div></div>
+        
+                    <script>
+                        /* Script embarcado para manter comportamento dos quizzes e perguntas diretas no arquivo exportado */
+                        (function(){
+                            // restaura respostas para Perguntas Diretas
+                            document.querySelectorAll('.papel-resposta').forEach(area=>{
+                                const chave = area.getAttribute('data-chave');
+                                if(chave && localStorage.getItem(chave)) area.value = localStorage.getItem(chave);
+                                area.addEventListener('input', ()=> {
+                                    if(chave) localStorage.setItem(chave, area.value);
+                                });
+                            });
+
+                            // para cada quiz-card, restaurar seleção salva e adicionar listeners
+                            document.querySelectorAll('.quiz-card').forEach(container=>{
+                                const quizId = container.getAttribute('data-quiz-id');
+                                if(!quizId) return;
+                                const key = 'quiz_answer_' + quizId;
+                                // associa listener de change e restaura se necessário
+                                const radios = container.querySelectorAll('input[type="radio"]');
+                                radios.forEach(r=>{
+                                    r.addEventListener('change', (e)=> {
+                                        localStorage.setItem(key, e.target.value);
+                                    });
+                                });
+                                const saved = localStorage.getItem(key);
+                                if(saved){
+                                    const r = container.querySelector('input[type="radio"][value="'+saved+'"]');
+                                    if(r) r.checked = true;
+                                }
+                            });
+
+                            // função global para verificar quiz (será chamada pelo botão)
+                            window.verificarQuiz = function(btn){
+                                const container = btn.closest('.quiz-card');
+                                if(!container) return;
+                                const radios = container.querySelectorAll('input[type="radio"]');
+                                const quizId = container.getAttribute('data-quiz-id');
+                                const resultBox = container.querySelector('.quiz-result');
+                                container.querySelectorAll('.option-label').forEach(l=> l.classList.remove('correct','incorrect'));
+
+                                let correctRadio = null;
+                                radios.forEach(r=>{
+                                    if(r.hasAttribute('data-correct')) correctRadio = r;
+                                });
+
+                                const selected = container.querySelector('input[type="radio"]:checked');
+                                if(!selected){
+                                    if(resultBox) resultBox.textContent = 'Escolha uma opção antes de verificar.';
+                                    return;
+                                }
+
+                                if(correctRadio){
+                                    const correctLabel = correctRadio.closest('.option-label');
+                                    if(correctLabel) correctLabel.classList.add('correct');
+                                }
+                                const selectedLabel = selected.closest('.option-label');
+                                if(selectedLabel && !selected.hasAttribute('data-correct')) selectedLabel.classList.add('incorrect');
+
+                                const key = 'quiz_answer_' + quizId;
+                                localStorage.setItem(key, selected.value);
+                                const acerto = selected.hasAttribute('data-correct') ? 1 : 0;
+                                if(resultBox) resultBox.textContent = acerto ? 'Resposta correta ✓' : 'Resposta incorreta ✗';
+                            };
+                        })();
+                    </script>
+                </body>
+                </html>
+            
